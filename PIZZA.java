@@ -88,7 +88,7 @@ public class PIZZA extends PizzaBase implements Discountable {
   }
 
     protected double getBaseUnitPrice(){
-      long diameterCM = Math.round(diameter *2.54);
+      double diameterCM = diameter * 2.54;
       double sizePrice = diameterCM * 5;
       return getToppingsPrice() + sizePrice;
     }
@@ -103,5 +103,3 @@ public class PIZZA extends PizzaBase implements Discountable {
     return  applyDiscount(subtotal);
    }
   }
-  
-    

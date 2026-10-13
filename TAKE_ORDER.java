@@ -101,7 +101,7 @@ public class TAKE_ORDER
                 amountReceived = console.nextDouble();
                 console.nextLine();
                 if (amountReceived <= amountDue){
-                    System.out.println("Amount Receivec must be greater than Amount Due.");
+                    System.out.println("Amount Received must be greater than Amount Due.");
                 }
         
             } while (amountReceived <= amountDue);
